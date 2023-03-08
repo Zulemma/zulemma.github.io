@@ -1,0 +1,258 @@
+---
+title: "Analytics: Luces, Data, Acción!"
+subtitle: "⚔<br/> ¿Qué es la Inteligencia de Negocios"
+author: "Zulemma Bazurto Blacio | LIDE | 08 de Marzo del 2023"
+institute: "LIDE"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: "css/main.css"
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    seal: false  
+---
+
+layout: true
+
+
+---
+background-image: url(fig/moses.jpg)
+background-size: cover
+class: center, center, top
+
+<img src="fig/LIDE.png" style="position: absolute; top: 0; right: 0; width: 150px;">
+
+
+
+
+#.large[.fontone[.left[.opaco[¿Analytics?:]]]]
+
+### .center[.large[.fontone[.red[Luces, Data...¡Acción!]]]]
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.right[.blue[.extralarge[<br>.fontone[Zulemma Bazurto Blacio  <br> Becas New Dimensions | 2023]]]]
+
+
+
+
+
+
+
+---
+background-image: url(fig/fondolide.jpg)
+background-size: cover
+class: center, center, top
+
+## .textcenter[.nd[.fontone[<br><br>Fotografía para Exhibición de Mujeres en Ciencias]]]
+
+<IMG class="imagen-respons" src="fig/pixel.jpg">
+
+.fontone[.textcenter[.weight[¿QUÉ ES UNA FOTO DE BUENA CALIDAD ?]]]
+---
+background-image: url(fig/fondolide.jpg)
+background-size: cover
+class: center, center, top
+
+## .weight[.fontone[.nd[.center[¿Algoritmos en fotografía?]]]]
+
+<div class="row">
+<div class="col-2x textcenter textmiddle"><IMG class="img-responsive" src="fig/photographer.jpg"></div>
+<div class="col-2x textcenter textmiddle fontone opaco large">
+<ul style="list-style-type: none">
+        <li>📸 Evaluar la foto enviada inicialmente.</li> 
+        <br>
+        <li>📸 Definir tiempo de entrega de la foto nueva </li>
+        <br>
+        <li>📸 Realizar fotos aprovechando tiempo y recursos  </li>
+        <br>
+        </ul>
+</div>
+---
+background-image: url(fig/equipo.jpg)
+background-size: cover
+class: center, center, top
+
+---
+background-image: url(fig/fondolide.jpg)
+background-size: cover
+class: center, center, top
+
+## .fontone[.nd[No tiene valor un producto profesional<br> que no se ajusta a nuestras necesidades y gustos]]
+
+<IMG class="image-respons" src="fig/error.jpg">
+---
+background-image: url(https://i.picasion.com/pic92/954ec0a2b5546fb54fcb909e2231d07a.gif)
+background-size: cover
+
+---
+background-image: url(fig/whole.jpg)
+background-size: cover
+class: center, center, center
+
+## .fontone[.nd[EL ALGORITMO DE FOTOGRAFÍA FUNCIONANDO EN ANALYTICS] <br> .black[Definiendo la necesidad]]
+
+<div class="textcenter textmiddle fontone opaco exlarge">
+<ul style="list-style-type: none">
+        <li>🤖️ Dar respuestas a las preguntas del negocio</li> 
+        <br>
+        <li>🤖️ Analizar datos</li>
+        <br>
+        <li>🤖️ Aplicación de análisis estadístico</li>
+        <br>
+        </ul>
+</div>
+---
+background-image: url(fig/whole.jpg)
+background-size: cover
+class: center, center, center
+
+## .textcenter[.nd[.fontone[Implementos del algoritmo de Analytics (inverso)<br> .black[Ajustando las necesidades del usuario interno]]]]
+
+<div class="textcenter textmiddle fontone opaco exlarge">
+<ul style="list-style-type: none">
+        <li>️ 🕵️📜️ Preguntas con enfoque "data-driven"</li> 
+        <br>
+        <li> 🤲📑Necesito: Datos de mi negocio</li>
+        <br>
+        <li> 🔧🚼️️ Herramientas: ajustarlas a la etapa y edad del negocio</li>
+        <br>
+        </ul>
+</div>
+---
+background-image: url(https://i.pinimg.com/originals/13/50/4e/13504e03244492d58a717788ec97ecdf.gif)
+background-size: cover
+
+---
+background-image: url(fig/chain.jpg)
+background-size: cover
+class: center, center, center
+---
+background-image: url(https://i.gifer.com/4YR1.gif)
+background-size: cover
+---
+background-image: url(https://64.media.tumblr.com/0a0ef5f13172c38b094a93f250c906d1/a6315d415d3be52d-3d/s500x750/385e6a092e91ce4a3ba0b879212581aafe0d8fce.gifv)
+background-size: cover
+---
+background-image: url(https://i.makeagif.com/media/5-11-2017/V_svUT.gif)
+background-size: cover
+---
+background-image: url(fig/chain.jpg)
+background-size: cover
+class: center, center, center
+---
+background-image: url(fig/team.png)
+background-size: cover
+class: center, center, center
+---
+background-image: url(fig/fondolide.jpg)
+background-size: cover
+class: center, center, top
+
+## .weight[.fontone[.nd[.center[Ciencia de Datos: Su cardinalidad usual]]]]
+
+<div class="row">
+<div class="col-2x textcenter textmiddle"><IMG class="image-responsive" src="fig/vendiagram.png"></div>
+<div class="col-2x textcenter textmiddle fontone opaco large">
+<ul style="list-style-type: none">
+        <li>✔️ Codificar, ¿ en qué lenguaje?</li> 
+        <br>
+        <li>✔️ ️Estadística, ¿qué metodo usar?</li>
+        <br>
+        <li>✔️ Machine Learning, ¿ésto es diferente a Estadística e Inteligencia Artificial?</li>
+        <br>
+        <li>....aún falta el dominio del área de expertiz!! UF!!</li>
+        </ul>
+</div>
+
+
+---
+background-image: url(http://www.liesdamnedlies.com/wp-content/uploads/2018/07/Funny-Unicorn-Wallpaper-Full-HD-Free-Download-Wallpaperxyz.com-28-e1530575544713.jpg)
+background-size: cover
+---
+background-image: url(fig/build.jpg)
+background-size: cover
+class: center, center, top
+
+---
+background-image: url(https://64.media.tumblr.com/tumblr_m59ub2NDLr1r1n5pqo1_500.gifv)
+background-size: cover
+
+---
+background-image: url(fig/datahr.jpg)
+background-size: cover
+class: center, center, top
+
+---
+background-image: url(fig/fondolide.jpg)
+background-size: cover
+class: center, center, top
+
+## .textcenter[.nd[.fontone[Motivación: Método de Pronóstico para Exportaciones de Flores de Ecuador a USA]]]
+
+
+<IMG class="image-responsive" src="fig/Imagen3.png">
+
+.fontone[.textcenter[.weight[¿DEBEN LOS EXPORTADORES DE FLORES CONTINUAR INVIRTIENDO EN EL MERCADO ESTADOUNIDENSE?]]]
+---
+background-image: url(fig/fondolide.jpg)
+background-size: cover
+class: center, center, top
+## .textcenter[.nd[.fontone[Analítica descriptiva: ¿estacionalidad?]]]
+
+
+<IMG class="imagena-respons" src="fig/imagen1.png">
+---
+background-image: url(fig/fondolide.jpg)
+background-size: cover
+class: center, center, top
+
+## .textcenter[.nd[.fontone[Pronosticando las Exportaciones <br>de Flores de Ecuador a USA para los siguientes <br>5 años]]]
+
+
+<IMG class="imagem-responsive" src="fig/Rplot01.jpeg">
+---
+background-image: url(fig/fondolide.jpg)
+background-size: cover
+class: center, center, top
+
+# .nd[.fontone[¿BUENAS PRÁCTICAS O DESAFÍOS?]]
+
+
+## ✔️ .fontone[ Generar data limpia, accesible y disponible.]
+
+## ✔️ .fontone[Crear equipos de Ciencia de Datos efectivos.]
+
+## ✔️ .fontone[Educar a las personas sobre lo que los datos pueden hacer.]
+---
+background-image: url(https://ca-times.brightspotcdn.com/dims4/default/e381cf8/2147483647/strip/true/crop/6720x4480+0+0/resize/1080x720!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Feb%2F52%2F5746ecfd420d95cad66a8613438c%2Fla-photos-1staff-462860-me-0929-oakland-baby-raves-cmh-05.JPG)
+background-size: cover
+
+
+# .white[.fontone["Hay que hacer cosas increíblemente no lineales para llegar donde se desea estar"]]
+
+---
+
+background-image: url(https://64.media.tumblr.com/cfc889b37729a964c14e733a1b9acb51/tumblr_n2jz4pKOJC1rrftcdo1_500.gif)
+background-size: cover
+
+
+
+
+
