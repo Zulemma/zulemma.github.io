@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+
+.fontone{
+  font-family: 'Oxanium';
+}
+
+h1,h3{
+  font-family: 'Lato';
+}
+
+.red{
+  color: #ff0000;
+}
+
+
+.green{
+  color: #228b22;
+}
+
+.greenlime{
+  color: #32cd32;
+}
+
+.espol{
+  color: #264653;
+}
+
+.large { font-size: 160% }
+.novo { font-size: 140% }
+.extralarge { font-size: 110% }
+.extra {font-size: 80%}
+
+.white{
+  color: #fffafa;
+}
+
+.rladies{
+  color: #88398A;
+}
+
+
+.blue{
+  color: #00ced1;
+}
+
+
+.black{
+  color: #000000;
+}
+
+ .weight {
+  font-weight: bold;
+}
+
+.textcenter{text-align: center;}
+.textmiddle{margin: auto 0;}
+.textoverline{text-decoration: underline; }
+
+.textbottom{
+  text-align: inherit;
+}¨
+
+.right{
+  float: right;
+  width: 500px;
+}
