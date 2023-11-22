@@ -4,7 +4,7 @@
     <title>Forecasting con R: Esenciales</title>
     <meta charset="utf-8" />
     <meta name="author" content="Zulemma Bazurto Blacio" />
-    <meta name="date" content="2023-11-19" />
+    <meta name="date" content="2023-11-21" />
     <script src="libs/header-attrs-2.17/header-attrs.js"></script>
     <link rel="stylesheet" href="css/main.css" type="text/css" />
   </head>
@@ -164,6 +164,105 @@ class: center, center, top
 .fontone[.left[.larger[La Función de Autocorrelación (ACF) nos permite estudiar la estructura de dependencia temporal de una serie de tiempo.]]]
 
 &lt;img src="fig/autocor.jpg"/ width="850"&gt;
+---
+background-image: url("fig/Fondo - 2023.PNG")
+background-size: cover
+class: center, center, top
+
+&lt;img src="fig/see.png" style="position: absolute; top: 0; right: 0; width: 150px;"&gt;
+
+## .weight[.fontone[.nd[.left[Análisis Exploratorio de la Estacionalidad]]]]
+
+### .left[.fontone[.opaco[Paquetes]]]
+&lt;div class="left fontone opaco large"&gt;
+&lt;ul style="list-style-type: none"&gt;
+&lt;li&gt; ggplot2 y su extensión ggfortify&lt;/li&gt; 
+&lt;li&gt; feasts&lt;/li&gt; 
+&lt;li&gt; forecast&lt;/li&gt;
+&lt;li&gt; timetk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+--
+
+### .left[.fontone[.opaco[Funciones]]]
+
+&lt;div class="left fontone opaco large"&gt;
+&lt;ul style="list-style-type: none"&gt;
+&lt;li&gt; autoplot()&lt;/li&gt; 
+&lt;li&gt; ggseanplot()&lt;/li&gt;
+&lt;li&gt; ggseason()&lt;/li&gt;
+&lt;li&gt; ggsubseries()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+---
+background-image: url("fig/Fondo - 2023.PNG")
+background-size: cover
+class: center, center, top
+
+&lt;img src="fig/see.png" style="position: absolute; top: 0; right: 0; width: 150px;"&gt;
+
+## .weight[.fontone[.nd[.left[ACF Y PACF: diferencias]]]]
+
+.large[.left[.fontone[.opaco[Los gráficos ACF y PACF son dos de las herramientas más importantes para identificar la estructura subyacente de una serie temporal]]]]
+
+### .left[.fontone[.opaco[Definiciones]]]
+&lt;div class="left fontone opaco extralarge"&gt;
+&lt;ul style="list-style-type: none"&gt;
+ &lt;li&gt; Autocorrelación parcial (PACF): Correlación de una serie temporal consigo misma en distintos retardos, tras eliminar los efectos de los retardos anteriores.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+--
+
+### .left[.fontone[.opaco[Utilidad]]]
+
+&lt;div class="left fontone opaco extralarge"&gt;
+&lt;ul style="list-style-type: disc"&gt;
+&lt;li&gt; El gráfico ACF puede utilizarse para identificar el orden de un modelo AR. El orden de un modelo AR es el número de retardos que se incluyen en el modelo.&lt;/li&gt; 
+&lt;br&gt;
+&lt;li&gt; El gráfico PACF puede utilizarse para identificar el orden de un modelo MA. El orden de un modelo MA es el número de rezagos que se incluyen en el modelo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+---
+background-image: url("fig/Fondo - 2023.PNG")
+background-size: cover
+class: center, center, top
+
+&lt;img src="fig/see.png" style="position: absolute; top: 0; right: 0; width: 150px;"&gt;
+
+## .weight[.fontone[.nd[.left[Ejemplo: Modelo ARMA]]]]
+
+&lt;img style="float:center" src="fig/arma.png" width="1000"&gt;
+---
+background-image: url("fig/Fondo - 2023.PNG")
+background-size: cover
+class: center, center, top
+
+&lt;img src="fig/see.png" style="position: absolute; top: 0; right: 0; width: 150px;"&gt;
+
+## .weight[.fontone[.nd[.left[ACF y PACF: interpretaciones]]]]
+
+&lt;div class="left fontone opaco large"&gt;
+&lt;ul style="list-style-type: disc"&gt;
+&lt;li&gt; Si el gráfico ACF muestra picos en los primeros rezagos, entonces un modelo AR puede ser apropiado.&lt;/li&gt; 
+&lt;br&gt;
+&lt;li&gt; Si el gráfico PACF muestra picos en los primeros rezagos, entonces un modelo MA puede ser apropiado.&lt;/li&gt;
+&lt;br&gt;
+&lt;li&gt; Si los gráficos ACF y PACF muestran picos en los primeros rezagos, entonces un modelo ARMA puede ser apropiado&lt;/li&gt;
+&lt;/div&gt;
+---
+background-image: url("fig/Fondo - 2023.PNG")
+background-size: cover
+class: center, center, top
+
+&lt;img src="fig/see.png" style="position: absolute; top: 0; right: 0; width: 150px;"&gt;
+
+## .weight[.fontone[.nd[.left[Descomposición de una de serie de tiempo ]]]]
+
+.larger[.left[.fontone[.opaco[Examinar los componentes subyacentes de la serie de tiempo que ayudarán a entender mejor los datos y así mejorar el modelado en un futuro]]]]
+
+&lt;img style="float:center" src="fig/seat.png" width="700"&gt;
 ---
 background-image: url("fig/Fondo - 2023.PNG")
 background-size: cover
