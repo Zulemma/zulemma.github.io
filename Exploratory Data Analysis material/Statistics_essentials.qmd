@@ -1,0 +1,48 @@
+---
+title: "Statistics I"
+author: "Zulemma Bazurto Blacio"
+date: "April, 2024"
+format: 
+  revealjs:
+    incremental: true
+---
+
+# FOCUS {background="#43464B"}
+
+`We focus on both the properties of data and on the collection of data.` 
+
+## How does data look like? {background-color="aquamarine" style="color:black"}
+```{r}
+library(openintro)
+library(magrittr)
+library(dplyr)
+loan50 %>% select(loan_amount,interest_rate,grade, total_income, homeownership) %>% head()
+```
+
+. . .
+
+Por ahora sólo interesa: <br> 
+¡darle sentido al rol que juega la Estadística en la práctica!
+
+## Estadística en la práctica {background-image="https://static.wikia.nocookie.net/smbz/images/a/ae/SMB1.jpg/revision/latest?cb=20110722133247" background-size="600px" style="color:blue" background-position="center"}
+
+. . .
+
+<br><br><br><br><br><br><br><br><br><br>
+Pregunta de estudio: ¿Los préstamos son más solicitados por personas que no poseen casa propia?
+
+
+## Data, variables and observations
+
+Para un análisis estadístico principalmente necesitamos *DATA* que se traduce en una **matriz de datos** compuesta por:
+
+-   Observaciones: representadas en cada fila
+-   Variables: representadas en cada columna
+
+```{r}
+library(kableExtra)
+kable(loan50 %>% select(loan_amount,grade, total_income, homeownership) %>% head()) %>% kable_styling(full_width = F) %>%
+        column_spec(column = 2, width = "3cm", background = "orange")
+```
+
+
