@@ -1,0 +1,657 @@
+---
+title: "Ciencia Abierta y Reproducibilidad"
+subtitle: "⚔<br/>  Universidad de Guayaquil"
+author: "Zulemma Bazurto Blacio "
+institute: "Universidad de Guayaquil"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: "css/main.css"
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    seal: false  
+---
+
+layout: true
+
+
+```{r setup, include=FALSE}
+library(flipbookr)
+```
+
+```{css, eval = TRUE, echo = FALSE}
+.remark-code{line-height: 1.5; font-size: 90%}
+@media print {
+  .has-continuation {
+    display: block;
+  }
+}
+```
+
+---
+
+
+
+
+
+#.large[.fontone[.left[.rladies[Ciencia Abierta y Reproducibilidad:]]]]
+
+### .center[.large[.fontone[.red[entre la práctica científica y el entrenamiento de pares]]]]
+
+
+<br>
+<br>
+
+
+### .right[.opaco[.extra[<br>.fontone[Zulemma Bazurto Blacio  <br> Universidad de Guayaquil | 2024]]]]
+
+
+---
+background-image: url("fig/solely.jpg")
+background-size: cover
+class: center, center, top
+
+
+## .weight[.fontone[.nd[.left[Agenda]]]]
+<br>
+
+--
+
+### .left[.fontone[.opaco[Ciencia Abierta (CA) y Reproducibilidad]]]
+
+<div class="left fontone opaco large">
+<ul style="list-style-type: none">
+<li> Investigación reproducible </li> 
+<li> Enseñanza de la reproducibilidad </li>
+</ul>
+</div>
+
+--
+
+<div class="left fontone opaco large">
+<ul style="list-style-type: none">
+<li> .red[Enseñanza reproducible]</li>
+</ul>
+</div>
+
+--
+
+### .left[.fontone[.opaco[3R project]]]
+
+<div class="left fontone opaco large">
+<ul style="list-style-type: none">
+<li> Mapeo de Prácticas de CA</li> 
+<li> ¿Cómo lo hacemos?</li>
+<li> Extensiones y trabajos futuros </li>
+</ul>
+</div>
+---
+background-image: url("fig/CA.JPG")
+background-size: cover
+class: center, center, top
+
+---
+background-image: url("fig/Open_umbrella.jpg")
+background-size: 75%
+class: center, center, top
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+.right[.fontone[.opaco[Ilustración: Lotta W Tomasson/VA CC BY-NC 2.0]]]
+
+---
+background-image: url("fig/taxonomy.png")
+background-size: cover
+class: center, center, top
+
+
+---
+background-image: url("fig/repro_intro.jpg")
+background-size: cover
+class: center, center, top
+
+
+
+---
+background-image: url("fig/reproducible_grid.jpg")
+background-size: 75%
+class: center, center, center
+
+## .weight[.fontone[.nd[.left[Reproducibilidad vs Replicabilidad]]]]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.left[.fontone[.opaco[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807]]]
+
+
+---
+background-image: url("fig/self_correcting.jpg")
+background-size: 60%
+class: center, center, center
+
+### .weight[.fontone[.nd[.left[¿Crisis de Reproducibilidad?: siempre un 'depende']]]]
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.right[.fontone[.opaco[.extra[https://absolutelymaybe.plos.org/2017/11/30/rebranding-retractions-and-the-honest-error-hypothesis/]]]]
+
+---
+background-image: url("fig/")
+background-size: cover
+class: center, center, top
+
+
+## .weight[.fontone[.nd[.left[Reproducibilidad: entre la práctica científica y el entrenamiento de pares]]]]
+
+<div class="left fontone opaco exlarge">
+<ul style="list-style-type: none">
+<li> 🍀 Investigación reproducible </li> 
+</ul>
+</div>
+
+--
+
+<div class="left fontone opaco exlarge">
+<ul style="list-style-type: none">
+<li> 🌱🌱 Enseñanza de la reproducibilidad </li>
+</ul>
+</div>
+
+--
+
+<div class="left fontone red exlarge">
+<ul style="list-style-type: none">
+<li> 🌾🌾 Enseñanza reproducible </li>
+</ul>
+</div>
+---
+background-image: url("fig/repro_research_2.jpg")
+background-size: cover
+class: center, center, top
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+.left[.fontone[.opaco[.extra[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807]]]]
+
+
+---
+background-image: url("fig/enseñanza_repro.jpg")
+background-size: cover
+class: center, center, top
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.right[.fontone[.opaco[.extra[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807]]]]
+
+---
+background-image: url("fig/enseñanza_repro_2.jpg")
+background-size: cover
+class: center, center, top
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.right[.fontone[.opaco[.extra[https://doi.org/10.5281/zenodo.1212496]]]]
+
+---
+background-image: url("fig/skills_2.jpg")
+background-size: cover
+class: center, center, top
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.right[.fontone[.opaco[.extra[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807]]]]
+
+
+
+
+
+
+---
+background-image: url("fig/3rproject.jpg")
+background-size: 80%
+class: center, center, top
+
+---
+background-image: url("fig/")
+background-size: 80%
+class: center, center, top
+
+## .weight[.fontone[.semillero[.left[3R Project: ¿Cómo surge?]]]]
+
+
+<div class="left fontone opaco larger">
+<ul style="list-style-type: none">
+<li> 🍀 Finalidad del estudio🍀: Medir las percepciones individuales y las experiencias colectivas de los profesores de la Facultad de Ciencias Administrativas respecto a la ciencia abierta.
+ </li> 
+</ul>
+</div>
+
+--
+
+
+
+<div class="left fontone opaco medium">
+<ul style="list-style-type: none">
+.fontone[.opaco[📋Instrumento: Cuestionario de 19 preguntas basado en el modelo de encuesta desarollado por el equipo de investigación de la Universidad de California y Open Research Funders Group (ORFG)]]
+<br>
+<br>
+<li> 🍀 Experiencia y participación en investigación científica  </li>
+<li> 🍀 Conocimiento y percepción de la Ciencia Abierta
+</li>
+<li> 🍀 Prácticas de Ciencia Abierta
+</li>
+<li> 🍀 Limitantes de la Ciencia Abierta
+</li>
+</ul>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+.left[.fontone[.rladies[.extreme[Mapeando las prácticas de Ciencia Abierta en Investigación Científica en la Facultad de Ciencias Administrativas de la Universidad de Guayaquil, Macías N., Salas A., Bazurto Z. (2024)]]]]
+
+---
+background-image: url("fig/mapeando.jpg")
+background-size: 99%
+class: center, center, top
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+.left[.fontone[.rladies[.extreme[Mapeando las prácticas de Ciencia Abierta en Investigación Científica en la Facultad de Ciencias Administrativas de la Universidad de Guayaquil, Macías N., Salas A., Bazurto Z. (2024)]]]]
+---
+background-image: url("fig/union.jpg")
+background-size: cover
+class: center, center, top
+
+---
+background-image: url("fig/mentees.jpg")
+background-size: cover
+class: center, center, top
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.right[.fontone[.opaco[.extra[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807]]]]
+
+---
+background-image: url("fig/flujo.jpg")
+background-size: cover
+class: center, center, top
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.right[.fontone[.opaco[.extra[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807]]]]
+
+---
+background-image: url("fig/pares.jpg")
+background-size: cover
+class: center, center, top
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+.left[.fontone[.nd[.exlarge[Cubriendo la dimensión]]]]
+.left[.fontone[.nd[.exlarge[de formación de pares]]]]
+
+
+---
+background-image: url("fig/producto.jpg")
+background-size: cover
+class: center, center, top
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+.left[.fontone[.nd[.exlarge[Cubriendo la dimensión de la práctica científica]]]]
+
+---
+background-image: url("fig/timeline.jpg")
+background-size: cover
+class: center, center, top
+
+---
+background-image: url("fig/expecting.jpg")
+background-size: cover
+class: center, center, top
+
+---
+background-image: url("fig/prefinal.jpg")
+background-size: cover
+class: center, center, top
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+.right[.fontone[.opaco[.extra[https://zenodo.org/records/10556824]]]]
+
+---
+background-image: url("fig/thank.jpg")
+background-size: cover
+class: center, center, top
+
+
+

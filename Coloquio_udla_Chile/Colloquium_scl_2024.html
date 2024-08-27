@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Ciencia Abierta y Reproducibilidad</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Zulemma Bazurto Blacio" />
+    <meta name="date" content="2024-08-27" />
+    <script src="libs/header-attrs-2.17/header-attrs.js"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+layout: true
+
+
+
+
+&lt;style type="text/css"&gt;
+.remark-code{line-height: 1.5; font-size: 90%}
+@media print {
+  .has-continuation {
+    display: block;
+  }
+}
+&lt;/style&gt;
+
+---
+
+
+
+
+
+#.large[.fontone[.left[.rladies[Ciencia Abierta y Reproducibilidad:]]]]
+
+### .center[.large[.fontone[.red[entre la práctica científica y el entrenamiento de pares]]]]
+
+
+&lt;br&gt;
+&lt;br&gt;
+
+
+### .right[.opaco[.extra[&lt;br&gt;.fontone[Zulemma Bazurto Blacio  &lt;br&gt; Universidad de Guayaquil | 2024]]]]
+
+
+---
+background-image: url("fig/solely.jpg")
+background-size: cover
+class: center, center, top
+
+
+## .weight[.fontone[.nd[.left[Agenda]]]]
+&lt;br&gt;
+
+--
+
+### .left[.fontone[.opaco[Ciencia Abierta (CA) y Reproducibilidad]]]
+
+&lt;div class="left fontone opaco large"&gt;
+&lt;ul style="list-style-type: none"&gt;
+&lt;li&gt; Investigación reproducible &lt;/li&gt; 
+&lt;li&gt; Enseñanza de la reproducibilidad &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+--
+
+&lt;div class="left fontone opaco large"&gt;
+&lt;ul style="list-style-type: none"&gt;
+&lt;li&gt; .red[Enseñanza reproducible]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+--
+
+### .left[.fontone[.opaco[3R project]]]
+
+&lt;div class="left fontone opaco large"&gt;
+&lt;ul style="list-style-type: none"&gt;
+&lt;li&gt; Mapeo de Prácticas de CA&lt;/li&gt; 
+&lt;li&gt; ¿Cómo lo hacemos?&lt;/li&gt;
+&lt;li&gt; Extensiones y trabajos futuros &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+---
+background-image: url("fig/CA.JPG")
+background-size: cover
+class: center, center, top
+
+---
+background-image: url("fig/Open_umbrella.jpg")
+background-size: 75%
+class: center, center, top
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+
+.right[.fontone[.opaco[Ilustración: Lotta W Tomasson/VA CC BY-NC 2.0]]]
+
+---
+background-image: url("fig/taxonomy.png")
+background-size: cover
+class: center, center, top
+
+
+---
+background-image: url("fig/repro_intro.jpg")
+background-size: cover
+class: center, center, top
+
+
+
+---
+background-image: url("fig/reproducible_grid.jpg")
+background-size: 75%
+class: center, center, center
+
+## .weight[.fontone[.nd[.left[Reproducibilidad vs Replicabilidad]]]]
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.left[.fontone[.opaco[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807]]]
+
+
+---
+background-image: url("fig/self_correcting.jpg")
+background-size: 60%
+class: center, center, center
+
+### .weight[.fontone[.nd[.left[¿Crisis de Reproducibilidad?: siempre un 'depende']]]]
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.right[.fontone[.opaco[.extra[https://absolutelymaybe.plos.org/2017/11/30/rebranding-retractions-and-the-honest-error-hypothesis/]]]]
+
+---
+background-image: url("fig/")
+background-size: cover
+class: center, center, top
+
+
+## .weight[.fontone[.nd[.left[Reproducibilidad: entre la práctica científica y el entrenamiento de pares]]]]
+
+&lt;div class="left fontone opaco exlarge"&gt;
+&lt;ul style="list-style-type: none"&gt;
+&lt;li&gt; 🍀 Investigación reproducible &lt;/li&gt; 
+&lt;/ul&gt;
+&lt;/div&gt;
+
+--
+
+&lt;div class="left fontone opaco exlarge"&gt;
+&lt;ul style="list-style-type: none"&gt;
+&lt;li&gt; 🌱🌱 Enseñanza de la reproducibilidad &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+--
+
+&lt;div class="left fontone red exlarge"&gt;
+&lt;ul style="list-style-type: none"&gt;
+&lt;li&gt; 🌾🌾 Enseñanza reproducible &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+---
+background-image: url("fig/repro_research_2.jpg")
+background-size: cover
+class: center, center, top
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+
+.left[.fontone[.opaco[.extra[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807]]]]
+
+
+---
+background-image: url("fig/enseñanza_repro.jpg")
+background-size: cover
+class: center, center, top
+
+
+
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.right[.fontone[.opaco[.extra[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807]]]]
+
+---
+background-image: url("fig/enseñanza_repro_2.jpg")
+background-size: cover
+class: center, center, top
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.right[.fontone[.opaco[.extra[https://doi.org/10.5281/zenodo.1212496]]]]
+
+---
+background-image: url("fig/skills_2.jpg")
+background-size: cover
+class: center, center, top
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.right[.fontone[.opaco[.extra[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807]]]]
+
+
+
+
+
+
+---
+background-image: url("fig/3rproject.jpg")
+background-size: 80%
+class: center, center, top
+
+---
+background-image: url("fig/")
+background-size: 80%
+class: center, center, top
+
+## .weight[.fontone[.semillero[.left[3R Project: ¿Cómo surge?]]]]
+
+
+&lt;div class="left fontone opaco larger"&gt;
+&lt;ul style="list-style-type: none"&gt;
+&lt;li&gt; 🍀 Finalidad del estudio🍀: Medir las percepciones individuales y las experiencias colectivas de los profesores de la Facultad de Ciencias Administrativas respecto a la ciencia abierta.
+ &lt;/li&gt; 
+&lt;/ul&gt;
+&lt;/div&gt;
+
+--
+
+
+
+&lt;div class="left fontone opaco medium"&gt;
+&lt;ul style="list-style-type: none"&gt;
+.fontone[.opaco[📋Instrumento: Cuestionario de 19 preguntas basado en el modelo de encuesta desarollado por el equipo de investigación de la Universidad de California y Open Research Funders Group (ORFG)]]
+&lt;br&gt;
+&lt;br&gt;
+&lt;li&gt; 🍀 Experiencia y participación en investigación científica  &lt;/li&gt;
+&lt;li&gt; 🍀 Conocimiento y percepción de la Ciencia Abierta
+&lt;/li&gt;
+&lt;li&gt; 🍀 Prácticas de Ciencia Abierta
+&lt;/li&gt;
+&lt;li&gt; 🍀 Limitantes de la Ciencia Abierta
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+
+.left[.fontone[.rladies[.extreme[Mapeando las prácticas de Ciencia Abierta en Investigación Científica en la Facultad de Ciencias Administrativas de la Universidad de Guayaquil, Macías N., Salas A., Bazurto Z. (2024)]]]]
+
+---
+background-image: url("fig/mapeando.jpg")
+background-size: 99%
+class: center, center, top
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+.left[.fontone[.rladies[.extreme[Mapeando las prácticas de Ciencia Abierta en Investigación Científica en la Facultad de Ciencias Administrativas de la Universidad de Guayaquil, Macías N., Salas A., Bazurto Z. (2024)]]]]
+---
+background-image: url("fig/union.jpg")
+background-size: cover
+class: center, center, top
+
+---
+background-image: url("fig/mentees.jpg")
+background-size: cover
+class: center, center, top
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.right[.fontone[.opaco[.extra[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807]]]]
+
+---
+background-image: url("fig/flujo.jpg")
+background-size: cover
+class: center, center, top
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.right[.fontone[.opaco[.extra[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807]]]]
+
+---
+background-image: url("fig/pares.jpg")
+background-size: cover
+class: center, center, top
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+
+.left[.fontone[.nd[.exlarge[Cubriendo la dimensión]]]]
+.left[.fontone[.nd[.exlarge[de formación de pares]]]]
+
+
+---
+background-image: url("fig/producto.jpg")
+background-size: cover
+class: center, center, top
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+
+.left[.fontone[.nd[.exlarge[Cubriendo la dimensión de la práctica científica]]]]
+
+---
+background-image: url("fig/timeline.jpg")
+background-size: cover
+class: center, center, top
+
+---
+background-image: url("fig/expecting.jpg")
+background-size: cover
+class: center, center, top
+
+---
+background-image: url("fig/prefinal.jpg")
+background-size: cover
+class: center, center, top
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+.right[.fontone[.opaco[.extra[https://zenodo.org/records/10556824]]]]
+
+---
+background-image: url("fig/thank.jpg")
+background-size: cover
+class: center, center, top
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
